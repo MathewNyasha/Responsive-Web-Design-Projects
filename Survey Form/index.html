@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Page Title -->
+    <h1 id="title">HTML and CSS Survey</h1>
+
+    <!-- Short Explanation -->
+    <p id="description">We'd love to hear your thoughts about HTML and CSS. Please take a moment to complete the survey.</p>
+
+    <!-- Form Element -->
+    <form id="survey-form">
+
+        <!-- Name Input Field -->
+        <label for="name" id="name-label">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <!-- Email Input Field -->
+        <label for="email" id="email-label">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <!-- Number Input Field -->
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+
+        <!-- Select Dropdown -->
+        <label for="dropdown">What is easy to learn between HTML and CSS:</label>
+        <select id="dropdown">
+            <option value="option1">HTML</option>
+            <option value="option2">CSS</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Between HTML and CSS which on is used to style the web page:</legend>
+            <label>
+                <input type="radio" name="radio-group" value="checkbox1">  HTML
+            </label>
+            <label>
+                <input type="radio" name="radio-group" value="checkbox2"> CSS 
+            </label>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>In CSS which selector is correct:</legend>
+            <label>
+                <input type="checkbox" value="checkbox1"> h1{},
+            </label>
+            <label>
+                <input type="checkbox" value="checkbox2"> .survay{}
+            </label>
+        </fieldset>
+
+        <!-- Additional Comments -->
+        <label for="comments">Additional comments or suggestions:</label>
+        <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+    <!-- Additional content goes here -->
+
+</body>
+
+</html>
